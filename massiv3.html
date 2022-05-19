@@ -1,0 +1,16 @@
+<html>
+    <script type="text/javascript">
+    function sortByAge(arr) {
+        arr.sort((a,b) => a.age > b.age ? 1 : -1);
+    }
+    let marat = {name: "Marat", age: 25};
+    let sanat = {name: "Sanat", age: 35};
+    let kanat = {name: "Kanat", age: 15};
+    let arr = [marat, sanat, kanat];
+    
+    sortByAge(arr);
+    alert(arr[0].name);
+    alert(arr[1].name);
+    alert(arr[2].name);
+    </script>
+</html>

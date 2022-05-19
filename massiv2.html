@@ -1,0 +1,21 @@
+<html>
+    <script type="text/javascript">
+    "use strict"
+    var arr = [5, 4, 3, 8, 0];
+    var filtered = [], valueMin, valueMax;
+
+    function filterRange(arrr, valueMin,valueMax){
+        for(var i=0; i<arrr.length;i++){
+
+            if((valueMin <= arr[i]) && (arr[i] <= valueMax)){
+                filtered.push(arrr[i]);
+                alert(filtered);
+            }
+        }
+        return filtered;
+    }
+    let a = prompt('первое число','')
+    let b = prompt('2 число','')
+    alert(filterRange(arr, a, b ));
+    </script>
+</html>
